@@ -16,7 +16,7 @@
 var uuid = new DeviceUUID().get();
 var du = new DeviceUUID().parse();
 const thedata = {
-  myUrl: (new URL(window.location.href)).hostname,
+  myUrl: (new URL(window.location.href)).origin,
   browserInfo: {
     browser_name: navigator.product,
     browser_appName: navigator.appName,
